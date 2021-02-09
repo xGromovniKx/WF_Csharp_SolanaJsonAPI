@@ -1,4 +1,4 @@
 # WF_Csharp_SolanaJsonAPI
 # Jumpstart project that calls Solana REST Json API from C#
-# Solution is with Windows Forms but you can use SolanaClassLibrary with web solution (for example ASP.NET)
+# Solution is in Windows Forms but you can use SolanaClassLibrary with other solutions (for example ASP.NET)
  
