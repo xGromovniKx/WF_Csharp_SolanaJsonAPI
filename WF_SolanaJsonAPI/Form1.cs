@@ -48,7 +48,7 @@ namespace WF_SolanaJsonAPI
             // second call to getFees REST method through GetFeesProcessor
             GetFeesModel.Rootobject gr = new GetFeesModel.Rootobject();
             GetFeesProcessor gp = new GetFeesProcessor();
-            gr = gp.GetGetFeesModel(dagf.GetJsonGetFees());
+            gr = gp.GetFeesModelRoot();
 
             textBox2.Text = gr.jsonrpc.ToString();
             textBox3.Text = gr.result.context.slot.ToString();

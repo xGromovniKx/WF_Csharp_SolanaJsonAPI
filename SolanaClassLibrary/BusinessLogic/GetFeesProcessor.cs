@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SolanaClassLibrary.DataAccess;
 
 namespace SolanaClassLibrary.BusinessLogic
 {
@@ -12,9 +13,10 @@ namespace SolanaClassLibrary.BusinessLogic
     {
         private GetFeesModel.Rootobject gfmr = new GetFeesModel.Rootobject();
 
-        public GetFeesModel.Rootobject GetGetFeesModel(string strJsonGetFees)
+        public GetFeesModel.Rootobject GetFeesModelRoot()
         {
-            JObject job = JObject.Parse(strJsonGetFees);
+            DA_GetFees dagf = new DA_GetFees();
+            JObject job = JObject.Parse(dagf.GetJsonGetFees());
 
             gfmr.result = new GetFeesModel.Result();
             gfmr.result.context = new GetFeesModel.Context();
