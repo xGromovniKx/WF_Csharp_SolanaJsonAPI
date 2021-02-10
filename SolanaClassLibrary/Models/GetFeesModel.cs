@@ -24,14 +24,14 @@ namespace SolanaClassLibrary.Models
 
         public class Context
         {
-            public int slot { get; set; }
+            public long slot { get; set; }
         }
 
         public class Value
         {
             public string blockhash { get; set; }
             public Feecalculator feeCalculator { get; set; }
-            public int lastValidSlot { get; set; }
+            public long lastValidSlot { get; set; }
         }
 
         public class Feecalculator
